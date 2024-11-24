@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Diamond.css">
+    </head>
+    <body>
+                    <!-- -------------------------------------------------------
+            |             The B Realm                              |
+            |-----------------------------------------------------|
+            | Character Name (Level)  |         Game Area         |
+            |-------------------------|-------------------------|
+            | HP: 100/100             |                         |
+            | MP: 50/50               |                         |
+            | Strength: 10            |                         |
+            | Agility: 8              |         [Scene]         |
+            | Intelligence: 12        |                         |
+            | XP: 500                 |                         |
+            | Level: 5                |                         |
+            |-------------------------|                         |
+            | Inventory               |                         |
+            | - Sword                 |-------------------------|
+            | - Shield                |         Action Log       |
+            | - Potion                | - You encounter a goblin! |
+            |--------------------------| - You found a treasure!  |
+            | Controls                |-------------------------|
+            | [Move] [Attack] [Interact]                         |
+            ------------------------------------------------------- -->
+        <div class="World"></div>
+        <div class="SuperContainer">
+            <div class="CharacterInfo">
+                <div class="CharacterNameLevel"></div>
+                <div class="CharacterStats"></div>
+                <div class="Inventory"></div>
+            </div>
+            <div class="PrimaryGameplay">
+                <div class="Area"></div>
+                <div class="Scene"></div>
+                <div class="ActionLog"></div>
+            </div>
+            <div class="OptionsBar"></div>
+        </div>
+
+        <script src="Diamond.js" async defer></script>
+    </body>
+</html>

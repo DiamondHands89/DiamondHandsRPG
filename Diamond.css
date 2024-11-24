@@ -1,0 +1,132 @@
+/* {Screen Size: Desktop} */
+@media (max-width: 1500px) {
+    body {
+        background-color: black;
+    }
+    .World {
+
+    }
+    .SuperContainer {
+
+    }
+    .CharacterInfo {
+
+    }
+        /* Character Info Properties */
+        .CharacterNameLevel {
+
+        }
+        .CharacterStats {
+
+        }
+        .Inventory {
+
+        }
+    .PrimaryGameplay {
+
+    }
+        /* Primary Gameplay Properties */
+        .Area {
+
+        }
+        .Scene {
+
+        }
+        .ActionLog {
+
+        }
+    .OptionsBar {
+
+    }
+}
+/* {END Screen Size: Desktop} */
+
+
+
+/* {Screen Size: Mid/Tablet} */
+@media (max-width: 900px) {
+    body {
+        background-color: black;
+    }
+    .World {
+
+    }
+    .SuperContainer {
+
+    }
+    .CharacterInfo {
+
+    }
+        /* Character Info Properties */
+        .CharacterNameLevel {
+
+        }
+        .CharacterStats {
+
+        }
+        .Inventory {
+
+        }
+    .PrimaryGameplay {
+
+    }
+        /* Primary Gameplay Properties */
+        .Area {
+
+        }
+        .Scene {
+
+        }
+        .ActionLog {
+
+        }
+    .OptionsBar {
+
+    }
+}
+/* {END Screen Size: Mid/Tablet} */
+
+
+
+/* {Screen Size: Mobile} */
+@media (max-width: 600px) {
+    body {
+        background-color: black;
+    }
+    .World {
+
+    }
+    .SuperContainer {
+
+    }
+    .CharacterInfo {
+
+    }
+        /* Character Info Properties */
+        .CharacterNameLevel {
+
+        }
+        .CharacterStats {
+
+        }
+        .Inventory {
+
+        }
+    .PrimaryGameplay {
+
+    }
+        /* Primary Gameplay Properties */
+        .Area {
+
+        }
+        .Scene {
+
+        }
+        .ActionLog {
+
+        }
+    .OptionsBar {
+
+    }
+}
+/* {END Screen Size: Mobile} */
