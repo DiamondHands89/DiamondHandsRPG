@@ -2,19 +2,29 @@
 @media (max-width: 1500px) {
     body {
         background-color: black;
+        height: 100vh;
+        width: 100vw;
+        color: whitesmoke;
     }
     .World {
-
+        border: 1px solid blue;
+        width: 100vw;
+        height: 5vh;
     }
     .SuperContainer {
-
+        border: 1px solid white;
+        height: 95vh;
+        width: 100vw;
     }
     .CharacterInfo {
-
+        border: 1px solid green;
+        padding: 10px;
+        height: 90vh;
+        width: 25vw;
     }
         /* Character Info Properties */
         .CharacterNameLevel {
-
+            border: 1px solid skyblue;
         }
         .CharacterStats {
 
@@ -47,12 +57,18 @@
 @media (max-width: 900px) {
     body {
         background-color: black;
+        height: 100vh;
+        width: 100vw;
     }
     .World {
-
+        border: 1px solid blue;
+        width: 100vw;
+        height: 5vh;
     }
     .SuperContainer {
-
+        border: 1px solid white;
+        height: 95vh;
+        width: 100vw;
     }
     .CharacterInfo {
 
@@ -92,12 +108,18 @@
 @media (max-width: 600px) {
     body {
         background-color: black;
+        height: 100vh;
+        width: 100vw;
     }
     .World {
-
+        border: 1px solid blue;
+        width: 100vw;
+        height: 5vh;
     }
     .SuperContainer {
-
+        border: 1px solid white;
+        height: 95vh;
+        width: 100vw;
     }
     .CharacterInfo {
 
