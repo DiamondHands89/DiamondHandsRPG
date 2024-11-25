@@ -9,45 +9,60 @@
     .World {
         border: 1px solid blue;
         width: 100vw;
-        height: 5vh;
+        height: 5%;
+        text-align: center;
+        padding-bottom: 3%;
+        color: goldenrod;
     }
+        /* World Title Styling */
+        
     .SuperContainer {
         border: 1px solid white;
-        height: 95vh;
+        height: 95%;
         width: 100vw;
+        display: flex;
     }
-    .CharacterInfo {
-        border: 1px solid green;
-        padding: 10px;
-        height: 90vh;
-        width: 25vw;
-    }
-        /* Character Info Properties */
-        .CharacterNameLevel {
-            border: 1px solid skyblue;
+        /* Customizeable Game Screen */
+        .CharacterInfo {
+            border: 1px solid green;
+            padding: 10px;
+            height: 100%;
+            width: 25%;
         }
-        .CharacterStats {
-
+            /* Character Info Properties */
+            .CharacterNameLevel {
+                border: 1px solid skyblue;
+                height: 7%;
+                width: auto;
+            }
+            .CharacterStats {
+                border: 1px solid yellow;
+                height: 60%;
+            }
+            .Inventory {
+                border: 1px solid pink;
+                height: 30%;
+            }
+        .PrimaryGameplay {
+            border: 1px solid crimson;
+            height: 100%;
+            width: 60%;
         }
-        .Inventory {
+            /* Primary Gameplay Properties */
+            .Area {
 
+            }
+            .Scene {
+
+            }
+            .ActionLog {
+
+            }
+        .OptionsBar {
+            border: 1px solid purple;
+            height: 100%;
+            width: auto;
         }
-    .PrimaryGameplay {
-
-    }
-        /* Primary Gameplay Properties */
-        .Area {
-
-        }
-        .Scene {
-
-        }
-        .ActionLog {
-
-        }
-    .OptionsBar {
-
-    }
 }
 /* {END Screen Size: Desktop} */
 
