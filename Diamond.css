@@ -26,7 +26,7 @@
         .CharacterInfo {
             border: 1px solid green;
             padding: 10px;
-            height: 100%;
+            height: auto;
             width: 25%;
         }
             /* Character Info Properties */
@@ -45,18 +45,44 @@
             }
         .PrimaryGameplay {
             border: 1px solid crimson;
-            height: 100%;
-            width: 60%;
+            height: auto;
+            width: 65%;
+            padding: 10px;
         }
             /* Primary Gameplay Properties */
             .Area {
-
+                border: 5px solid crimson;
+                border-radius: 15px;
+                height: 7%;
+                width: auto;
+                text-align: center;
+                padding-bottom: 10px;
+                position: absolute;
+                left: 50%;
+                color: black;
             }
             .Scene {
-
+                border: 3px dotted blue;
+                height: 100%;
+                width: auto;
             }
+                /* Elements to fill the gameplay visual */
+                #FakeScene {
+                    height: 100%;
+                    width: 100%;
+                }
             .ActionLog {
-
+                border: 5px solid crimson;
+                border-radius: 15px;
+                height: 7%;
+                width: auto;
+                text-align: center;
+                padding-bottom: 10px;
+                position: absolute;
+                left: 50%;
+                color: black;
+                bottom: 0%;
+                font-weight: bolder;
             }
         .OptionsBar {
             border: 1px solid purple;
@@ -86,7 +112,10 @@
         width: 100vw;
     }
     .CharacterInfo {
-
+        border: 1px solid green;
+        padding: 10px;
+        height: auto;
+        width: 30%;
     }
         /* Character Info Properties */
         .CharacterNameLevel {
@@ -99,7 +128,10 @@
 
         }
     .PrimaryGameplay {
-
+        border: 1px solid crimson;
+        height: auto;
+        width: 70%;
+        padding: 10px;
     }
         /* Primary Gameplay Properties */
         .Area {
@@ -112,7 +144,10 @@
 
         }
     .OptionsBar {
-
+        border: 1px solid purple;
+        height: 100%;
+        width: auto;
+        display: none;
     }
 }
 /* {END Screen Size: Mid/Tablet} */
