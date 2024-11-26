@@ -20,6 +20,7 @@
         border: 1px solid white;
         height: 95%;
         width: 100vw;
+        margin-right: auto;
         display: flex;
     }
         /* Customizeable Game Screen */
@@ -88,6 +89,7 @@
             border: 1px solid purple;
             height: 100%;
             width: auto;
+            margin-right: auto;
         }
 }
 /* {END Screen Size: Desktop} */
@@ -155,7 +157,7 @@
 
 
 /* {Screen Size: Mobile} */
-@media (max-width: 600px) {
+@media (max-width: 580px) {
     body {
         background-color: black;
         height: 100vh;
@@ -172,7 +174,11 @@
         width: 100vw;
     }
     .CharacterInfo {
-
+        border: 1px solid green;
+        padding: 10px;
+        height: auto;
+        width: 30%;
+        display: none;
     }
         /* Character Info Properties */
         .CharacterNameLevel {
@@ -185,7 +191,10 @@
 
         }
     .PrimaryGameplay {
-
+        border: 1px solid crimson;
+        height: auto;
+        width: 100%;
+        padding: 10px;
     }
         /* Primary Gameplay Properties */
         .Area {
@@ -198,7 +207,10 @@
 
         }
     .OptionsBar {
-
+        border: 1px solid purple;
+        height: 100%;
+        width: auto;
+        display: none;
     }
 }
 /* {END Screen Size: Mobile} */
