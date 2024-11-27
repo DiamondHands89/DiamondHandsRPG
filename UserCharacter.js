@@ -25,10 +25,10 @@
 const character = {
     // Basic Info
     basicInfo: {
-        name: "Diamond Hand Kwame",
-        race: "Human",
-        gender: "Male",
-        type: "Fighter"
+        name: "",
+        race: "",
+        gender: "",
+        type: ""
     },
     // Attributes and stats
     baseStats: {
@@ -41,8 +41,9 @@ const character = {
         defense: "",
         agility: "",
         observation: "",
-
+        xpToNextLevel: "",
     },
+    // Skill Set
     skillSet: {
         activeSkills: [],
         passiveSkills: [],
@@ -112,3 +113,7 @@ const character = {
     }
 }
 // END PLAYER'S CHARACTER
+
+
+
+
