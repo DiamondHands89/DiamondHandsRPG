@@ -112,6 +112,9 @@ const character = {
         food: [],
     }
 }
+
+// Exporting the character object 
+export { character };
 // END PLAYER'S CHARACTER
 
 
