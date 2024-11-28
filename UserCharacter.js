@@ -117,6 +117,12 @@ const character = {
 export { character };
 // END PLAYER'S CHARACTER
 
+// Importing the Skill System
+import { addSkillToCharacter, skillPool } from './SkillSystem.js';
 
+// Player selects a skill
+addSkillToCharacter("Ice Shard", "activeSkills");
+
+console.log(character.skillSet);
 
 
