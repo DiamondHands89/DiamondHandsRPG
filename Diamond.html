@@ -10,6 +10,22 @@
         <link rel="stylesheet" href="Diamond.css">
     </head>
     <body>
+        
+        <!--  TITLE SCREEN  -->
+        <div id="TitleScreen" class="Screen">
+            <h1>Welcome To The Diamond-Verse</h1>
+            <button onclick="showScreen('CharacterSelection')">Enter The Verse</button>
+        </div>
+        <!--  END TITLE SCREEN  -->
+        
+        
+        <!-- CHARACTER SELECTION SCREEN -->
+        <div id="CharacterSelection" class="Screen">
+            <h2>Select Your Character</h2>
+            <button onclick="showScreen('Gameplay')">Continue</button>
+        </div>
+        <!-- END CHARACTER SELECTION SCREEN -->
+        
                     <!-- -------------------------------------------------------
             |             The B Realm                              |
             |-----------------------------------------------------|
@@ -31,48 +47,53 @@
             | Controls                |-------------------------|
             | [Move] [Attack] [Interact]                         |
             ------------------------------------------------------- -->
-        <div class="World">
-            <h3 id="World">The Boa Kingdom</h3>
-        </div>
-        <div class="SuperContainer">
-            <div class="CharacterInfo">
-                <div class="CharacterNameLevel">
-                    <h4>DiamondHandKwame LV999</h4>
-                </div>
-                <div class="CharacterStats">
-                    <p>HP: ---/---</p>
-                    <p>MP: ---/---</p>
-                    <p>Strength: ---</p>
-                    <p>Speed: ---</p>
-                    <p>Defense: ---</p>
-                    <p>Agility: ---</p>
-                    <p>XP To Next: ---</p>
-                    <p>Level: ---</p>
-                    <p>Awakening: ---</p>
-                </div>
-                <div class="Inventory">
-                    <h4>Inventory</h4>
-                    <p>1st Weapon: Diamond Sword</p>
-                    <p>2nd Weapon: N/A</p>
-                    <p>Steak x15</p>
-                    <p></p>
-                </div>
+            
+        <!--  GAMEPLAY SCREEN  -->
+        <div id="Gameplay" class="Screen">
+            <div class="World">
+                <h3 id="World">The Boa Kingdom</h3>
             </div>
-            <div class="PrimaryGameplay">
-                <div class="Area">
-                    <h3>Papaya Town: The Home Village</h3>
+            <div class="SuperContainer">
+                <div class="CharacterInfo">
+                    <div class="CharacterNameLevel">
+                        <h4>DiamondHandKwame LV999</h4>
+                    </div>
+                    <div class="CharacterStats">
+                        <p>HP: ---/---</p>
+                        <p>MP: ---/---</p>
+                        <p>Strength: ---</p>
+                        <p>Speed: ---</p>
+                        <p>Defense: ---</p>
+                        <p>Agility: ---</p>
+                        <p>XP To Next: ---</p>
+                        <p>Level: ---</p>
+                        <p>Awakening: ---</p>
+                    </div>
+                    <div class="Inventory">
+                        <h4>Inventory</h4>
+                        <p>1st Weapon: Diamond Sword</p>
+                        <p>2nd Weapon: N/A</p>
+                        <p>Steak x15</p>
+                        <p></p>
+                    </div>
                 </div>
-                <div class="Scene">
-                    <img id="FakeScene" src="https://th.bing.com/th/id/OIP.hoSUejF2RegXuUa2gSoq_gHaEK?rs=1&pid=ImgDetMain" alt="Random Gameplay. Substitute for my own for sketch purposes">
+                <div class="PrimaryGameplay">
+                    <div class="Area">
+                        <h3>Papaya Town: The Home Village</h3>
+                    </div>
+                    <div class="Scene">
+                        <img id="FakeScene" src="https://th.bing.com/th/id/OIP.hoSUejF2RegXuUa2gSoq_gHaEK?rs=1&pid=ImgDetMain" alt="Random Gameplay. Substitute for my own for sketch purposes">
+                    </div>
+                    <div class="ActionLog">
+                        <P>You have entered Papaya Town</P>
+                        <p></p>
+                    </div>
                 </div>
-                <div class="ActionLog">
-                    <P>You have entered Papaya Town</P>
-                    <p></p>
-                </div>
+                <div class="OptionsBar"></div>
             </div>
-            <div class="OptionsBar"></div>
         </div>
-
-        <script src="Diamond.js" async defer></script>
+        <!--  END GAMEPLAY SCREEN  -->
+        
+        <script src="Main.js" async defer></script>
     </body>
 </html>
