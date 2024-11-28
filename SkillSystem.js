@@ -18,9 +18,9 @@ const skillPool = {
         new Skill("Lightning Strike", "active", "attack", 40, 25, 8, "A quick dash in the direction character is facing. If an enemy is in the path, inflicts damage.")
     ],
     passiveSkills: [
-        new Skill("Flame Mastery", "passive", 0, 0, 0, "Increases fire damage by 15%"),
-        new Skill("Diamond Defense", "passive", 0, 0, 0, "Takes zero damage when defending, upon perfect guard can inflict counter damage equal to 1% of defense."),
-        new Skill("Speed Boost", "passive", 0, 0, 0, "Increases overall speed by 10%")
+        new Skill("Flame Mastery", "passive", "", 0, 0, 0, "Increases fire damage by 15%"),
+        new Skill("Diamond Defense", "passive", "", 0, 0, 0, "Takes zero damage when defending, upon perfect guard can inflict counter damage equal to 1% of defense."),
+        new Skill("Speed Boost", "passive", "", 0, 0, 0, "Increases overall speed by 10%")
     ]
 };
 
@@ -40,11 +40,6 @@ function addSkillToCharacter(skillName, skillType) {
     }
 }
 
-// Example of adding skills to the character
-addSkillToCharacter("Fire Fist", "activeSkills");
-addSkillToCharacter("Diamond Defense", "passiveSkills");
-
-console.log(character.skillSet);
 
 // Exporting the functions and skill pool
 export { addSkillToCharacter, skillPool };
