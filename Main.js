@@ -10,7 +10,7 @@ console.log(character.skillSet);
 
 function showScreen(screenId) {
     // Hide all screens
-    document.querySelectorAll('.screen').forEach(screen => {
+    document.querySelectorAll('.Screen').forEach(screen => {
         screen.style.display = 'none';
     });
     // Show the selected screen
