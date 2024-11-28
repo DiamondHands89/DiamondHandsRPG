@@ -26,3 +26,25 @@ const skillPool = {
 
 // Exporting the skill pool
 export { skillPool };
+
+
+import { character } from './Character.js';
+
+// Function to add skill to character's skillSet
+function addSkillToCharacter(skillName, skillType) {
+    const skill = skillPool[skillType].find(skill => skill.name === skillName);
+    if (skill) {
+        character.skillSet[skillType].push(skill);
+    } else {
+        console.log(`Skill ${skillName} not found in ${skillType}`);
+    }
+}
+
+// Example of adding skills to the character
+addSkillToCharacter("Fire Fist", "activeSkills");
+addSkillToCharacter("Diamond Defense", "passiveSkills");
+
+console.log(character.skillSet);
+
+// Exporting the functions and skill pool
+export { addSkillToCharacter, skillPool };
