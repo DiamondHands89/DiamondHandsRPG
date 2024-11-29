@@ -1,11 +1,15 @@
-import { addSkillToCharacter, skillPool } from './SkillSystem.js';
-import { character } from './UserCharacter.js';
+import { character } from './UserCharacter.mjs';
+import { addSkillToCharacter, skillPool } from './SkillSystem.mjs';
+
 
 // Player selects a skill
 addSkillToCharacter("Fire Fist", "activeSkills");
 addSkillToCharacter("Diamond Defense", "passiveSkills");
 
 console.log(character.skillSet);
+
+
+
 
 
 function showScreen(screenId) {
@@ -17,6 +21,8 @@ function showScreen(screenId) {
     document.getElementById(screenId).style.display = 'block';
 }
 
+// Ensure showScreen is available in the global scope
+window.showScreen = showScreen;
 
 // Additional logic for character selection, game state management, etc.
 

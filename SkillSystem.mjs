@@ -24,11 +24,8 @@ const skillPool = {
     ]
 };
 
-// Exporting the skill pool
-export { skillPool };
 
-
-import { character } from './Character.js';
+import { character } from './UserCharacter.mjs';
 
 // Function to add skill to character's skillSet
 function addSkillToCharacter(skillName, skillType) {
@@ -42,4 +39,4 @@ function addSkillToCharacter(skillName, skillType) {
 
 
 // Exporting the functions and skill pool
-export { addSkillToCharacter, skillPool };
+export { skillPool, addSkillToCharacter };
