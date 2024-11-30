@@ -26,8 +26,16 @@
         
         <!-- CHARACTER SELECTION SCREEN -->
         <div id="CharacterSelection" class="Screen">
-            <h2>Select Your Character</h2>
-            <button onclick="showScreen('Gameplay')">Continue</button>
+            <div id="BackgroundImageContainer">
+                <div id="CharacterSelectionSetup">
+                    <h2 id="CharacterSelectionTitle">Select Your Character</h2>
+                    <div id="CharacterSelectionDisplay">
+                        <div class="CharacterSelectCharacter"></div>
+                        <div class="CharacterSelectOptions"></div>
+                    </div>
+                    <button id="FinishCharacterSelection" onclick="showScreen('Gameplay')">Continue</button>
+                </div>
+            </div>
         </div>
         <!-- END CHARACTER SELECTION SCREEN -->
         
