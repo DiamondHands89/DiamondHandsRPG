@@ -10,7 +10,7 @@ class Skill {
     }
 }
 
-// Example Skills
+// In Game Skill List
 const skillPool = {
     activeSkills: [
         new Skill("Fire Fist", "active", "attack", 30, 20, 5, "A punch with a powerful burst of fire."),
