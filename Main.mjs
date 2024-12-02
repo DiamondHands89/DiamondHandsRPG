@@ -3,10 +3,10 @@ import { addSkillToCharacter, skillPool } from './SkillSystem.mjs';
 
 
 // Player selects a skill
-addSkillToCharacter("Fire Fist", "activeSkills");
-addSkillToCharacter("Diamond Defense", "passiveSkills");
+// addSkillToCharacter("Fire Fist", "activeSkills");
+// addSkillToCharacter("Diamond Defense", "passiveSkills");
 
-console.log(character.skillSet);
+// console.log(character.skillSet);
 
 
 
