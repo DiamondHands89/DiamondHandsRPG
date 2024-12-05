@@ -53,24 +53,33 @@ const character = {
         weapons: [
             {
                 name: "",
+                level: "",
                 damage: "",
-                range: "",
-                agility: "",
-                speed: ""
+                description: "",
+                speed: "",
+                associatedSkills: [],
+                isEquipped: "",
+                isUnlocked: ""
             },
             {
                 name: "",
+                level: "",
                 damage: "",
-                range: "",
-                agility: "",
-                speed: ""
+                description: "",
+                speed: "",
+                associatedSkills: [],
+                isEquipped: "",
+                isUnlocked: ""
             },
             {
                 name: "",
+                level: "",
                 damage: "",
-                range: "",
-                agility: "",
-                speed: ""
+                description: "",
+                speed: "",
+                associatedSkills: [],
+                isEquipped: "",
+                isUnlocked: ""
             }
         ],
         tools: [
@@ -141,10 +150,10 @@ export { character };
 // END PLAYER'S CHARACTER
 
 // Importing the Skill System
-import { addSkillToCharacter, skillPool } from './SkillSystem.mjs';
 
-// Player selects a skill
-addSkillToCharacter("Fire Fist", "activeSkills");
+import { skillPool, addSkillToCharacter, } from './SkillSystem.mjs';
+
+
 
 console.log(character.skillSet);
 

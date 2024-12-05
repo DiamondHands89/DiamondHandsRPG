@@ -1,12 +1,13 @@
 class Skill {
-    constructor(name, type, effect, damage, manaCost, cooldown, description) {
+    constructor(name, type, effect, damage, manaCost, cooldown, description, isUnlocked) {
         this.name = name;
         this.type = type; // "active" or "passive"
         this.effect = effect; // "attack", "debuff attack", "debuff", "buff", "heal"
         this.damage = damage || 0;
         this.manaCost = manaCost || 0;
         this.cooldown = cooldown || 0;
-        this.description = description || "";
+        this.description = description;
+        this.isUnlocked = false; // Defaults to false until unlocked in game
     }
 }
 
@@ -28,12 +29,30 @@ const skillPool = {
 import { character } from './UserCharacter.mjs';
 
 // Function to add skill to character's skillSet
-function addSkillToCharacter(skillName, skillType) {
-    const skill = skillPool[skillType].find(skill => skill.name === skillName);
-    if (skill) {
-        character.skillSet[skillType].push(skill);
+function addSkillToCharacter(skillName, skillSetType) {
+    // Find the skill in the available skills list
+    let skillToAdd;
+    if (skillSetType === 'activeSkills') {
+        skillToAdd = skillPool.activeSkills.find(skill => skill.name === skillName);
+    } else if (skillSetType === 'passiveSkills') {
+        skillToAdd = skillPool.passiveSkills.find(skill => skill.name === skillName);
+    }
+    if (skillToAdd) {
+        // Check if skill is already unlocked
+        if (!skillToAdd.isUnlocked) {
+            // Unlock the skill
+            skillToAdd.isUnlocked = true;
+        }
+        // Add the unlocked skill to the character's skillset
+        if (skillSetType === 'activeSkills') {
+            character.skillSet.activeSkills.push(skillToAdd);
+        } else if (skillSetType === 'passiveSkills') {
+            character.skillSet.passiveSkills.push(skillToAdd);
+        } else {
+            console.log("Invalid skill set type");
+        }
     } else {
-        console.log(`Skill ${skillName} not found in ${skillType}`);
+        console.log("Skill not found in the skill pool");
     }
 }
 
