@@ -23,7 +23,18 @@ class Weapon {
 
 
 // Handles Head Equipment
-
+class HeadEquip {
+    constructor(name, level, strength, speed, defense, agility, observation, description) {
+        this.name = name;
+        this.level = level || 0;
+        this.strength = strength || 0;
+        this.speed = speed || 0;
+        this.defense = defense || 0;
+        this.agility = agility || 0;
+        this.observation = observation || 0;
+        this.description = description;
+    }
+}
     // Function to add head equip to character's equipment
 
 
