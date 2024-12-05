@@ -73,6 +73,29 @@ const character = {
                 speed: ""
             }
         ],
+        tools: [
+            {
+                name: "",
+                function: "",
+                range: "",
+                agility: "",
+                speed: ""
+            },
+            {
+                name: "",
+                function: "",
+                range: "",
+                agility: "",
+                speed: ""
+            },
+            {
+                name: "",
+                function: "",
+                range: "",
+                agility: "",
+                speed: ""
+            }
+        ],
         head: [
             {
                 name: "",
