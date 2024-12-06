@@ -32,16 +32,16 @@ const character = {
     },
     // Attributes and stats
     baseStats: {
-        maxHP: "",
-        currentHP: "",
-        maxMP: "",
-        currentMP: "",
-        strength: "",
-        speed: "",
-        defense: "",
-        agility: "",
-        observation: "",
-        xpToNextLevel: "",
+        maxHP: 0,
+        currentHP: 0,
+        maxMP: 0,
+        currentMP: 0,
+        strength: 0,
+        speed: 0,
+        defense: 0,
+        agility: 0,
+        observation: 0,
+        xpToNextLevel: 0,
     },
     // Skill Set
     skillSet: {
@@ -50,93 +50,12 @@ const character = {
     },
     // Equipment Items
     equips: {
-        weapons: [
-            {
-                name: "",
-                level: "",
-                damage: "",
-                description: "",
-                speed: "",
-                associatedSkills: [],
-                isEquipped: "",
-                isUnlocked: ""
-            },
-            {
-                name: "",
-                level: "",
-                damage: "",
-                description: "",
-                speed: "",
-                associatedSkills: [],
-                isEquipped: "",
-                isUnlocked: ""
-            },
-            {
-                name: "",
-                level: "",
-                damage: "",
-                description: "",
-                speed: "",
-                associatedSkills: [],
-                isEquipped: "",
-                isUnlocked: ""
-            }
-        ],
-        tools: [
-            {
-                name: "",
-                function: "",
-                range: "",
-                agility: "",
-                speed: ""
-            },
-            {
-                name: "",
-                function: "",
-                range: "",
-                agility: "",
-                speed: ""
-            },
-            {
-                name: "",
-                function: "",
-                range: "",
-                agility: "",
-                speed: ""
-            }
-        ],
-        head: [
-            {
-                name: "",
-                defense: "",
-                agility: "",
-                speed: ""
-            }
-        ],
-        body: [
-            {
-                name: "",
-                defense: "",
-                agility: "",
-                speed: ""
-            }
-        ],
-        hands: [
-            {
-                name: "",
-                defense: "",
-                agility: "",
-                speed: ""
-            }
-        ],
-        feet: [
-            {
-                name: "",
-                defense: "",
-                agility: "",
-                speed: ""
-            }
-        ]
+        weapons: [],
+        tools: [],
+        head: [],
+        body: [],
+        hands: [],
+        feet: []
     },
     // Character Bag
     inventory: {

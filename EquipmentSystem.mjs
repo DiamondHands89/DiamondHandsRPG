@@ -1,4 +1,4 @@
-import { character } from '.UserCharacter.mjs';
+import { character } from './UserCharacter.mjs';
 
 // Handles Weapons
 class Weapon {
@@ -18,7 +18,12 @@ class Weapon {
 
 
 // Handles Tools
-
+class Tool {
+    constructor(name, utility) {
+        this.name = name;
+        this.utility = utility;
+    }
+}
     // Function to add tool to character's equipment
 
 
@@ -39,13 +44,43 @@ class HeadEquip {
 
 
 // Handles Body Equipment
-
-
+class BodyEquip {
+    constructor(name, level, strength, speed, defense, agility, observation, description) {
+        this.name = name;
+        this.level = level || 0;
+        this.strength = strength || 0;
+        this.speed = speed || 0;
+        this.defense = defense || 0;
+        this.agility = agility || 0;
+        this.observation = observation || 0;
+        this.description = description;
+    }
+}
 // Handles Hands Equipment
-
-
+class HandEquip {
+    constructor(name, level, strength, speed, defense, agility, observation, description) {
+        this.name = name;
+        this.level = level || 0;
+        this.strength = strength || 0;
+        this.speed = speed || 0;
+        this.defense = defense || 0;
+        this.agility = agility || 0;
+        this.observation = observation || 0;
+        this.description = description;
+    }
+}
 // Handles Feet Equiment
-
-
+class FeetEquip {
+    constructor(name, level, strength, speed, defense, agility, observation, description) {
+        this.name = name;
+        this.level = level || 0;
+        this.strength = strength || 0;
+        this.speed = speed || 0;
+        this.defense = defense || 0;
+        this.agility = agility || 0;
+        this.observation = observation || 0;
+        this.description = description;
+    }
+}
 
 
