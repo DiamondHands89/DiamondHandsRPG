@@ -1,3 +1,5 @@
+import { character } from "./UserCharacter.mjs";
+
 class Skill {
     constructor(name, type, effect, damage, manaCost, cooldown, description, isUnlocked) {
         this.name = name;

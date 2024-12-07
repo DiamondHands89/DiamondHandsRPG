@@ -1,20 +1,32 @@
 import { character } from './UserCharacter.mjs';
 import { addSkillToCharacter, skillPool } from './SkillSystem.mjs';
-import {Weapon, addWeaponToCharacter, Tool, addToolToCharacter, HeadEquip, addHeadEquipToCharacter, BodyEquip, addBodyEquipToCharacter, HandEquip, addHandEquipToCharacter, FeetEquip, addFeetEquipToCharacter } from './EquipmentSystem.mjs';
+import {Weapon, addWeaponToCharacter, Tool, addToolToCharacter, HeadEquip, addHeadEquipToCharacter, BodyEquip, addBodyEquipToCharacter, HandEquip, addHandEquipToCharacter, FeetEquip, addFeetEquipToCharacter, equipmentPool } from './EquipmentSystem.mjs';
 
 
+function initializeCharacter() {
+    // Player selects starter skills
+    addSkillToCharacter("Fire Fist", "activeSkills", character);
+    addSkillToCharacter("Diamond Defense", "passiveSkills", character);
 
-// console.log(character.skillSet);
+    // Adding default weapons
+    addWeaponToCharacter(equipmentPool.weapons[0], character);
+    addWeaponToCharacter(equipmentPool.weapons[1], character);
 
-// Player selects a skill
-addSkillToCharacter("Fire Fist", "activeSkills");
-addSkillToCharacter("Diamond Defense", "passiveSkills");
+    // Adding default tools
+    addToolToCharacter(equipmentPool.tools[0], character);
 
-// Adding default equipment for the end of tutorial
-addHeadEquipToCharacter(equipmentPool.head[0]);
-addBodyEquipToCharacter(equipmentPool.body[0]);
-addHandEquipToCharacter(equipmentPool.hands[0]);
-addFeetEquipToCharacter(equipmentPool.feet[0]);
+    // Adding default equipment for the end of tutorial
+    addHeadEquipToCharacter(equipmentPool.head[0], character);
+    addBodyEquipToCharacter(equipmentPool.body[0], character);
+    addHandEquipToCharacter(equipmentPool.hands[0], character);
+    addFeetEquipToCharacter(equipmentPool.feet[0], character);
+
+    console.log(character);
+}
+
+
+// Call the initialization function to set up Character
+initializeCharacter();
 
 
 function showScreen(screenId) {

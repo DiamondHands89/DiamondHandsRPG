@@ -1,8 +1,8 @@
-
+import { character } from "./UserCharacter.mjs";
 
 // Handles Weapons
 class Weapon {
-    constructor(name, level, strength, speed, defense, agility, description, speed, associatedSkills, isEquipped, isUnlocked) {
+    constructor(name, level, strength, speed, defense, agility, description, associatedSkills, isEquipped, isUnlocked) {
         this.name = name;
         this.level = level || 0; // Changes to 1 once unlocked
         this.strength = strength || 0;
@@ -234,5 +234,5 @@ const equipmentPool = {
 
 
 // Export Equip functions
-export {Weapon, addWeaponToCharacter, Tool, addToolToCharacter, HeadEquip, addHeadEquipToCharacter, BodyEquip, addBodyEquipToCharacter, HandEquip, addHandEquipToCharacter, FeetEquip, addFeetEquipToCharacter };
+export {Weapon, addWeaponToCharacter, Tool, addToolToCharacter, HeadEquip, addHeadEquipToCharacter, BodyEquip, addBodyEquipToCharacter, HandEquip, addHandEquipToCharacter, FeetEquip, addFeetEquipToCharacter, equipmentPool };
 
