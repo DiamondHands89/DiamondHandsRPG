@@ -26,7 +26,7 @@ const skillPool = {
 };
 
 
-import { character } from './UserCharacter.mjs';
+
 
 // Function to add skill to character's skillSet
 function addSkillToCharacter(skillName, skillSetType) {

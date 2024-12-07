@@ -68,12 +68,8 @@ const character = {
 export { character };
 // END PLAYER'S CHARACTER
 
-// Importing the Skill System
-
-import { skillPool, addSkillToCharacter, } from './SkillSystem.mjs';
 
 
-
-console.log(character.skillSet);
+console.log(character);
 
 

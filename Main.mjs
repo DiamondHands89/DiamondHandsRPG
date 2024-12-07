@@ -1,6 +1,6 @@
 import { character } from './UserCharacter.mjs';
 import { addSkillToCharacter, skillPool } from './SkillSystem.mjs';
-
+import {Weapon, addWeaponToCharacter, Tool, addToolToCharacter, HeadEquip, addHeadEquipToCharacter, BodyEquip, addBodyEquipToCharacter, HandEquip, addHandEquipToCharacter, FeetEquip, addFeetEquipToCharacter } from './EquipmentSystem.mjs';
 
 
 
@@ -10,6 +10,11 @@ import { addSkillToCharacter, skillPool } from './SkillSystem.mjs';
 addSkillToCharacter("Fire Fist", "activeSkills");
 addSkillToCharacter("Diamond Defense", "passiveSkills");
 
+// Adding default equipment for the end of tutorial
+addHeadEquipToCharacter(equipmentPool.head[0]);
+addBodyEquipToCharacter(equipmentPool.body[0]);
+addHandEquipToCharacter(equipmentPool.hands[0]);
+addFeetEquipToCharacter(equipmentPool.feet[0]);
 
 
 function showScreen(screenId) {
