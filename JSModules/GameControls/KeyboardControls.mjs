@@ -7,8 +7,10 @@ const keyMappings = {
     ArrowDown: 'moveBackward',
     ArrowLeft: 'moveLeft',
     ArrowRight: 'moveRight',
-    Space: 'attack',
-    KeyQ: 'guard',
+    Space: 'jump',
+    KeyQ: 'lightAttack',
+    KeyW: 'heavyAttack',
+    KeyE: 'guard',
     Digit1: 'skill1',
     Digit2: 'skill2',
     Digit3: 'skill3',
@@ -25,3 +27,23 @@ const keyMappings = {
 }
 
 // Function to handle key press events
+function handleKeyPress(event) {
+    const action = keyMappings[event.code];
+    if (action) {
+        // Call the corresponding action
+        performAction(action);
+    }
+}
+
+// Function to perform actions based on key presses
+function performAction(action) {
+    switch(action) {
+        case 'moveForward':
+            console.log("Move character forward");
+            break;
+        case '':
+            console.log("");
+            break;
+        
+    }
+}
