@@ -11,6 +11,13 @@ const keyMappings = {
     KeyQ: 'lightAttack',
     KeyW: 'heavyAttack',
     KeyE: 'guard',
+    KeyR: 'weapondSkill1',
+    KeyT: 'weaponSkill2',
+    KeyY: 'weaponSkill3',
+    KeyU: 'useTool',
+    keyI: 'openInventory',
+    KeyM: 'openMap',
+    KeyP: 'pauseGame', // Offline Only
     Digit1: 'skill1',
     Digit2: 'skill2',
     Digit3: 'skill3',
@@ -21,9 +28,6 @@ const keyMappings = {
     Digit8: 'skill8',
     Digit9: 'skill9',
     Digit0: 'skill10',
-    keyI: 'openInventory',
-    KeyM: 'openMap',
-    KeyP: 'pauseGame', // Offline Only
 }
 
 // Function to handle key press events
@@ -41,9 +45,57 @@ function performAction(action) {
         case 'moveForward':
             console.log("Move character forward");
             break;
-        case '':
-            console.log("");
+        case 'moveBackward':
+            console.log("Turn character 180 degrees and move forward");
             break;
-        
+        case 'moveLeft':
+            console.log("Turn character 90 degrees to the left and move forward");
+        case 'moveRight':
+            console.log("Turn character 90 degrees to the right and move forward");
+        case 'jump':
+            console.log("Jump into the air");
+        case 'lightAttack':
+            console.log("Perform a quick attack");
+        case 'heavyAttack':
+            console.log("Perform a heavy attack");
+        case 'guard':
+            console.log("Guard");
+        case 'weaponSkill1':
+            console.log("Perform the selected weapon's slot 1 skill");
+        case 'weaponSkill2':
+            console.log("Perform the selected weapon's slot 2 skill");
+        case 'weaponSkill3':
+            console.log("Perform the selected weapon's slot 3 skill");
+        case 'useTool':
+            console.log("Use Selected Tool")
+        case 'skill1':
+            console.log("Perform the skill in Character's skill slot 1")
+        case 'skill2':
+            console.log("Perform the skill in Character's skill slot 1")
+        case 'skill3':
+            console.log("Perform the skill in Character's skill slot 1")
+        case 'skill4':
+            console.log("Perform the skill in Character's skill slot 1")
+        case 'skill5':
+            console.log("Perform the skill in Character's skill slot 1")
+        case 'skill6':
+            console.log("Perform the skill in Character's skill slot 1")
+        case 'skill7':
+            console.log("Perform the skill in Character's skill slot 1")
+        case 'skill8':
+            console.log("Perform the skill in Character's skill slot 1")
+        case 'skill9':
+            console.log("Perform the skill in Character's skill slot 1")
+        case 'skill0':
+            console.log("Perform the skill in Character's skill slot 1")
+        case 'skill1':
+            console.log("Perform the skill in Character's skill slot 1")
+        default:
+            console.log("Unknown action", action)        
     }
 }
+
+// Event listener for button press
+document.addEventListener('keydown', handleKeyPress);
+
+export { handleKeyPress };

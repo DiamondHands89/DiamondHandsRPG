@@ -1,7 +1,7 @@
 import { character } from './CharacterCustomizationModules/UserCharacter.mjs';
 import { addSkillToCharacter, skillPool } from './CharacterCustomizationModules/SkillSystem.mjs';
-import {Weapon, addWeaponToCharacter, Tool, addToolToCharacter, HeadEquip, addHeadEquipToCharacter, BodyEquip, addBodyEquipToCharacter, HandEquip, addHandEquipToCharacter, FeetEquip, addFeetEquipToCharacter, equipmentPool } from './CharacterCustomizationModules/EquipmentSystem.mjs';
-
+import { Weapon, addWeaponToCharacter, Tool, addToolToCharacter, HeadEquip, addHeadEquipToCharacter, BodyEquip, addBodyEquipToCharacter, HandEquip, addHandEquipToCharacter, FeetEquip, addFeetEquipToCharacter, equipmentPool } from './CharacterCustomizationModules/EquipmentSystem.mjs';
+import { handleKeyPress } from './GameControls/KeyboardControls.mjs';
 
 function initializeCharacter() {
     // Player selects starter skills
@@ -27,6 +27,9 @@ function initializeCharacter() {
 
 // Call the initialization function to set up Character
 initializeCharacter();
+
+// Add event listener for button press
+document.addEventListener('keydown', handleKeyPress);
 
 
 function showScreen(screenId) {
