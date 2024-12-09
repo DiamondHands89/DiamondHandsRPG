@@ -42,6 +42,7 @@ const character = {
         agility: 0,
         observation: 0,
         xpToNextLevel: 0,
+        awakening: 0
     },
     // Skill Set
     skillSet: {
