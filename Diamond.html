@@ -33,6 +33,24 @@
                         <div class="CharacterSelectCharacter"></div>
                         <fieldset class="CharacterSelectOptions">
                             <legend>Character Options</legend>
+                            <div class="CharacterSelectOptionsContainer">
+                                <div class="CharacterSelectOption">
+                                    <label for="CharacterName">Character Name:</label>
+                                    <input type="text" id="CharacterName" name="CharacterName" required>
+                                </div>
+                                <div class="CharacterSelectOption">
+                                    <label for="CombatClass">Character Class:</label>
+                                    <select id="CombatClass" name="CombatClass" required>
+                                        <option value="Fighter">Fighter</option>
+                                        <option value="Mage">Mage</option>
+                                        <option value="Tech Warrior">Tech Warrior</option>
+                                        <option value="Gunner">Gunner</option>
+                                        <option value="Healer">Healer</option>
+                                        <option value="Assassin">Assassin</option>
+                                    </select>
+                                </div>
+                                <div class="CharacterSelectOption">
+                                    <label for="Character"></label>
                         </fieldset>
                     </div>
                     <button id="FinishCharacterSelection" onclick="showScreen('Gameplay')">Continue</button>
