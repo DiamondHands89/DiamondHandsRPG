@@ -74,7 +74,7 @@
                 width: 100vw;
             }
                 .CharacterSelectCharacter {
-                    border: 5px solid black;
+                    border: 5px solid crimson;
                     height: 100%;
                     width: 50%;
                 }
@@ -502,3 +502,9 @@
     }
 }
 /* {END Screen Size: Mobile} */
+
+legend {
+    font-size: 150%;
+    font-family: "MedievalSharp", cursive;
+    color: goldenrod;
+}
