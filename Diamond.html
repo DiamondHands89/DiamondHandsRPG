@@ -35,8 +35,20 @@
                             <legend>Character Options</legend>
                             <div class="CharacterSelectOptionsContainer">
                                 <div class="CharacterSelectOption">
-                                    <label for="CharacterName">Character Name:</label>
+                                    <label for="CharacterName">Name:</label>
                                     <input type="text" id="CharacterName" name="CharacterName" required>
+                                </div>
+                                <div class="CharacterSelectOption">
+                                    <label for="CharacterSex">Sex</label>
+                                    <select id="CharacterSex" name="CharacterSex" required>
+                                        <option value="Female">Female</option>
+                                        <option value="Male">Male</option>
+                                    </select>
+                                </div>]=
+                                <div class="CharacterSelectOption">
+                                    <label for="CharacterRace">Race</label>
+                                    <select id="CharacterRace" name="CharacterRace" required>
+                                    </select>
                                 </div>
                                 <div class="CharacterSelectOption">
                                     <label for="CombatClass">Character Class:</label>
@@ -50,7 +62,7 @@
                                     </select>
                                 </div>
                                 <div class="CharacterSelectOption">
-                                    <label for="Character"></label>
+                                    <label for="SecondaryClass"></label>
                         </fieldset>
                     </div>
                     <button id="FinishCharacterSelection" onclick="showScreen('Gameplay')">Continue</button>
