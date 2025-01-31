@@ -44,10 +44,18 @@
                                         <option value="Female">Female</option>
                                         <option value="Male">Male</option>
                                     </select>
-                                </div>]=
+                                </div>
                                 <div class="CharacterSelectOption">
                                     <label for="CharacterRace">Race</label>
                                     <select id="CharacterRace" name="CharacterRace" required>
+                                        <option value="Human">Human</option>
+                                        <option value="Dwarf" disabled>Dwarf (Locked)</option>
+                                        <option value="Elf" disabled>Elf (Locked)</option>
+                                        <option value="Fairy" disabled>Fairy (Locked)</option>
+                                        <option value="Beast Kin" disabled>Beast Kin (Locked)</option>
+                                        <option value="Lizard Kin" disabled>Lizard Kin (Locked)</option>
+                                        <option value="Demon" disabled>Demon (Locked)</option>
+                                        <option value="Angel" disabled>Angel (Locked)</option>
                                     </select>
                                 </div>
                                 <div class="CharacterSelectOption">
@@ -62,7 +70,19 @@
                                     </select>
                                 </div>
                                 <div class="CharacterSelectOption">
-                                    <label for="SecondaryClass"></label>
+                                    <label for="SecondaryClass">Character Careers</label>
+                                    <select id="SecondaryClass" name="SecondaryClass">
+                                        <option value="Shop Owner">Shop Owner</option>
+                                        <option value="Chef">Chef</option>
+                                        <option value="Farmer">Farmer</option>
+                                        <option value="Fisherman">Fisherman</option>
+                                        <option value="Miner">Miner</option>
+                                        <option value="Metal Worker">Metal Worker</option>
+                                        <option value="Carpenter">Carpenter</option>
+                                        <option value="Tailor">Tailor</option>
+                                        <option value="Botanist">Botanist</option>
+                                        <option value="Mechanic">Mechanic</option>
+                                    </select>
                         </fieldset>
                     </div>
                     <button id="FinishCharacterSelection" onclick="showScreen('Gameplay')">Continue</button>
